@@ -1,0 +1,32 @@
+#tabel1{
+    /* border: 1px red solid; */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-collapse: collapse;
+}
+#tabel1 tr td, #tabel1 tr th{
+    border: 1px blue double;
+    padding: 15px;
+}
+/* COLOREAZA TABLE HEADER */
+#tabel1 tr th{
+    color: red;
+    background-color: rgba(12, 12, 12, 0.7);
+}
+/* COLOREAZA RANDURILE PARE */
+#tabel1 tbody tr:nth-child(2n){
+    background-color: bisque;
+}
+/* COLOREAZA RANDURILE IMPARE */
+#tabel1 tbody tr:nth-child(2n+1){
+    background-color:rgb(114, 238, 238);
+}
+/* COLOREAZA DOAR PARTEA DE FOOTER */
+#tabel1 tfoot tr{ 
+    background-color: blueviolet;
+    color: #ffffff;
+}
+#containerTabel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
