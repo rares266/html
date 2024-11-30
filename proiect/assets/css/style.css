@@ -1,3 +1,13 @@
+/* METODA 2 ADAUGARE FONTURI */
+@font-face {
+	font-family: 'Sevillana';
+	src: url('../css/fonts/Sevillana-Regular.woff2') format('woff2'),
+		url('../css/fonts/Sevillana-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
 .logo {
 	width: 100%;
 	max-width: 300px;
@@ -30,8 +40,11 @@ nav ul li a {
 	font-size: 30px;
 	color: #ffffff;
 	text-decoration: none;
+	/* LUATE DIN GOOGLE FONTS */
+	font-family: 'Sevillana', serif; /* font-family: 'Sevillana', cursive; */
+	font-weight: 400;
+	font-style: normal;
 }
-
 /* END HEADER */
 
 #banner {
@@ -52,12 +65,100 @@ nav ul li a {
 	margin: 20px 0px;
 	padding: 10px 30px;
 }
-#foto{
+#foto {
 	width: 100%;
 	max-width: 1800px;
 	margin: auto;
 }
-#foto img.foto{
+#foto img.foto {
 	display: inline-block;
 	margin: 20px;
 }
+
+/* START CARDS */
+#containerCards {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	text-align: center;
+}
+#containerCards .card {
+	width: 300px;
+	height: 550px;
+	display: inline-block;
+	margin: 20px;
+	text-align: center;
+	border: 1px solid #e6e6e6;
+}
+#containerCards .card .cardHeader {
+	width: 100%;
+	height: 150px;
+	background-color: #f2f2f2;
+	padding-top: 40px;
+	margin-bottom: 30px;
+	transition: background-color 0.5s ease;
+}
+#containerCards .card .cardHeader h3 {
+	margin: 0px;
+}
+#containerCards .card .cardHeader .price {
+	font-size: 50px;
+	font-weight: bold;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+#containerCards .card .cardHeader .perMonth {
+	display: inline-block;
+	width: 100%;
+	max-width: 35%;
+	font-size: 13px;
+	background-color: white;
+	padding: 10px;
+	border-radius: 20px;
+	border: 1px solid #e6e6e6;
+}
+#containerCards .card:hover {
+	.cardHeader {
+		background-color: #0095ff;
+	}
+	.cardTitle,
+	.price {
+		color: #ffffff;
+	}
+}
+
+#containerCards .card .cardBody ul {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#containerCards .card .cardBody ul li {
+	list-style: none;
+	padding: 12px;
+	border-bottom: 1px solid #e6e6e6;
+}
+#containerCards .card .cardBody .disabled {
+	border-bottom: none;
+}
+#containerCards .card .cardFooter {
+	width: 100%;
+	height: 50px;
+	padding-top: 20px;
+}
+#containerCards .card .cardFooter button {
+	width: 50%;
+	height: 40px;
+	background-color: #0095ff;
+	color: #ffffff;
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 20px;
+	margin-bottom: 50px;
+	transition: box-shadow 0.5s ease;
+}
+#containerCards .card .cardFooter button:hover {
+	text-decoration: underline;
+	box-shadow: #0095ff 1px 1px 10px;
+}
+/* END CARDS */

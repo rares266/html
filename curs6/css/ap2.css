@@ -1,0 +1,51 @@
+#container{
+    width: 100%;
+    max-width: 800px;
+    min-width: 300px;
+    margin: auto;
+}
+#container h1{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 2px solid rgb(0, 187, 255);
+    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+#myform{
+    background-color: rgba(255, 228, 196, 0.749);
+    padding: 25px;
+    text-align: center;
+}
+#myform div{
+    margin:15px 0px;
+}
+#myform label{
+    display:inline-block;
+    width: 100px;
+    font-size: 20px;
+    text-align: left;
+}
+#myform input{
+    display:inline-block;
+    width: 200px;
+    padding: 15px;
+}
+#check label{
+    display:inline;
+    width: 300px;
+}
+#check input{
+    display:inline-block;
+    width: 20px;
+    padding: 5px;
+}
+#submit{
+    background-color: rgb(8, 68, 165);
+    color: #ffffff;
+    font-size: 20px;
+    border: 1px solid rgb(204, 206, 208);
+    border-radius: 25px;
+}

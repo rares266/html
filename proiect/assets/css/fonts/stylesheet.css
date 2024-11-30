@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Edu AU VIC WA NT Arrows';
+    src: url('EduAUVICWANTArrows-Regular.woff2') format('woff2'),
+        url('EduAUVICWANTArrows-Regular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sevillana';
+    src: url('Sevillana-Regular.woff2') format('woff2'),
+        url('Sevillana-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
