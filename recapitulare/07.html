@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>07</title>
+	</head>
+	<body>
+		<style>
+			body {
+				font-family: 'Dancing Script', cursive;
+				font-size: 15px;
+			}
+			nav {
+				background-color: #284554;
+				height: 36px;
+			}
+			nav > ul {
+				margin: 0;
+				padding: 0;
+			}
+			nav > ul > li {
+				text-transform: uppercase;
+				display: inline;
+				float: left;
+				padding: 7px 5px 10px 5px;
+			}
+			nav > ul > li:hover {
+				background-color: #ff0a0a;
+			}
+			nav > ul > li.active {
+				background-color: #ff0a0a;
+			}
+			nav > ul > li.active > a {
+				color: white;
+			}
+			nav > ul > li > a {
+				color: white;
+				text-decoration: none;
+				list-style: none;
+				padding: 15px 20px;
+			}
+			nav > ul > li > a:hover {
+				color: black;
+			}
+
+			/* SUBMETNIU */
+			ul.submeniu {
+				text-transform: uppercase;
+				display: none;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			nav > ul li:hover > ul.submeniu {
+				display: block;
+				background-color: #284554;
+				clear: both;
+				margin-top: 10px;
+				position: absolute;
+				width: 160px;
+			}
+			ul.submeniu > li > a {
+				padding: 15px 20px;
+				text-decoration: none;
+			}
+			UL.submeniu > li:hover {
+				background-color: #ff0a0a;
+				color: #ffffff;
+			}
+			nav > ul > li:hover > ul.submeniu > li {
+				padding: 7px 5px 7px 5px;
+			}
+            nav > ul > li:hover > ul.submeniu > li > a {
+                padding: 7px 5px 7px 5px;
+                text-decoration: none;
+                color: #ffffff;
+            }
+            ul.submeniu > li > a{
+                padding: 7px 5px 7px 5px;
+                text-decoration: none;
+            }
+		</style>
+		<nav>
+			<ul>
+				<li class="active"><a href="">Acasa</a></li>
+				<li>
+					<a href="">Blog</a>
+					<ul class="submeniu">
+						<li><a target="_blank" href="03.html">Lista</a></li>
+						<li><a target="_blank" href="04.html">Paragrafe</a></li>
+						<li><a target="_blank" href="05.html">Numar</a></li>
+						<li><a target="_blank" href="06.html">Tabel</a></li>
+						<li><a target="_blank" href="07.html">Formular</a></li>
+					</ul>
+				</li>
+				<li><a href="">Portofoliu</a></li>
+				<li><a href="">Despre noi</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		</nav>
+	</body>
+</html>
